@@ -1,7 +1,7 @@
+import { API_URL } from "@env"
 const useConection = () => {
-  // const [dataPelis, setDataPelis] = useState();
   const sendData= (data, url) => {
-    return fetch("https://www.recargateaqui.com/api/"+url, {
+    return fetch(API_URL+url, {
       method: "POST",
       headers: {
         "Accept": "application/json",
